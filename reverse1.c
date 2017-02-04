@@ -1,4 +1,4 @@
-#include <stdio.h> // printf
+#include <stdio.h> 
 
 
 char reverse(char * str, int length);
@@ -14,7 +14,7 @@ int main(){
 
       for(i = 0; *(str+i) != '\0'; i++)
     {
-        length++;                        // getting length of char array without the '\0'
+        length++;                        // getting length of char array 
     }
     printf("length : %d \n", length);
     reverse(a,length);
@@ -32,7 +32,7 @@ char reverse(char *str, int length){
     end = length - 1;
     
 
-    for(i = 0; i < length/2 ; i++)
+    for(i = 0; i < length/2 ; i++) // swapping
     {
         temp = str[i];               
         str[i] = str[end];
